@@ -11,7 +11,7 @@ import base64
 import pdb
 from utils import *
 
-export_file_url = 'https://www.dropbox.com/s/xlwwdf5zmz3ehvs/export.pkl?dl=0'
+export_file_url = 'https://www.googleapis.com/drive/v3/files/1z5WRMshbw8Xz38UPU2-Fulk0f1ncU90B?alt=media&key=AIzaSyDvMHW-2yleU8G3OljOhzT49zTtf91xuYU'
 export_file_name = 'export.pkl'
 classes = ['a', 'b', 'c']
 
@@ -47,17 +47,19 @@ async def upload(request):
     img_bytes = await (data["file"].read())
 
     img = open_image(BytesIO(img_bytes))
-    x, y, z = img.data.shape
+    w, h = img.size   
+    fi = 1
+    size_ = int(256*(w/h)*fi), int(256*fi)
 
-    max_size = 1000
-    y_new, z_new = get_resize(y, z, max_size)
+    data_ = ( ImageImageList.from_folder(path=path, ignore_empty=True, recurse=False)
+                    .split_none()
+                    .label_empty()
+                    .transform(size=size_)
+                    .databunch(bs=1)
+                    .normalize(imagenet_stats, do_y=True) )
+    data_.c = 3
 
-    data_bunch = (ImageImageList.from_folder(path).split_none().label_from_func(lambda x: x)
-          .transform(get_transforms(do_flip=False), size=(y_new,z_new), tfm_y=True)
-          .databunch(bs=2, no_check=True).normalize(imagenet_stats, do_y=True))
-
-    data_bunch.c = 3
-    learn.data = data_bunch
+    learn.data = data_
     _,img_hr,losses = learn.predict(img)
 
     im = Image(img_hr.clamp(0,1))
