@@ -48,7 +48,7 @@ async def upload(request):
 
     img = open_image(BytesIO(img_bytes))
     w, h = img.size   
-    fi = 1
+    fi = float(data["fi"])
     size_ = int(256*(w/h)*fi), int(256*fi)
 
     data_ = ( ImageImageList.from_folder(path=path, ignore_empty=True, recurse=False)
