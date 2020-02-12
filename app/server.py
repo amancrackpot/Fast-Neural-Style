@@ -11,7 +11,7 @@ import base64
 import pdb
 from utils import *
 
-# export_file_url = 'https://www.googleapis.com/drive/v3/files/1z5WRMshbw8Xz38UPU2-Fulk0f1ncU90B?alt=media&key=AIzaSyDvMHW-2yleU8G3OljOhzT49zTtf91xuYU'
+export_file_url = 'https://www.googleapis.com/drive/v3/files/1z5WRMshbw8Xz38UPU2-Fulk0f1ncU90B?alt=media&key=AIzaSyDvMHW-2yleU8G3OljOhzT49zTtf91xuYU'
 export_file_name = 'export.pkl'
 classes = ['a', 'b', 'c']
 
@@ -22,16 +22,16 @@ app = Starlette()
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_headers=['X-Requested-With', 'Content-Type'])
 app.mount('/static', StaticFiles(directory='app/static'))
 
-# async def download_file(url, dest):
-#     if dest.exists(): return
-#     async with aiohttp.ClientSession() as session:
-#         async with session.get(url) as response:
-#             data = await response.read()
-#             with open(dest, 'wb') as f: f.write(data)
+async def download_file(url, dest):
+    if dest.exists(): return
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            data = await response.read()
+            with open(dest, 'wb') as f: f.write(data)
 
 
 async def setup_learner():
-#     await download_file(export_file_url, path/'models'/export_file_name)
+    await download_file(export_file_url, path/'models'/export_file_name)
     defaults.device = torch.device('cpu')
     learn = load_learner(path/'models', export_file_name)
     return learn
@@ -61,7 +61,7 @@ async def upload(request):
     data_.c = 3
 
     learn.data = data_
-    learn.load(path/models/Style);
+    learn.load(path/saved/Style);
     
     _,img_hr,losses = learn.predict(img)
 
