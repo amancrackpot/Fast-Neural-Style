@@ -68,25 +68,21 @@ body {
 }
 
 #content1 {
-  position: absolute;
-  left: 0;
-  right: 0;
+  height: 100%;
 }
 #left1 {
   float: left;
-  top: 0;
-  width: 100%;
-  height: 30%;
+  width: 30%;
+  height: 100%;
   overflow: auto;
   box-sizing: border-box;
   padding: 0.2em;
 }
 #right1 {
   float: left;
-  bottom: 0;
-  width: 100%;
+  width: 70%;
   background: linear-gradient(to bottom, #000066 -10%, #ccffff 93%);
-  height: 70%;
+  height: 100vh;
   overflow: auto;
   box-sizing: border-box;
   padding: 0.5em;
@@ -149,7 +145,9 @@ body {
 					<input id="inp_file" type="file" name="file" >
 					<input id="inp_img" type="hidden" name="img" value="">
 					<span class="focus-input100"></span>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Style will be </label>
+				</div>
+				<div>
+					<label>Style will be </label>
 				    	<select id = "Style" name = 'Style' required>
 							<option value = "anime256">Anime</option>
 						    	<option value = "depp256">Depp</option>
@@ -197,9 +195,11 @@ body {
 							<option value = "crayon256">Crayon</option>
 							<option value = "loose256">Loose</option>	
 					     </select>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Finess will be <input id="inp_fi" type="number" name="fi" min="0.6" step="0.1" max="2" placeholder="1" value="1">
-				
+				</div>
+				<br>
+				<div>
+					Finess will be <input id="inp_fi" type="number" name="fi" min="0.6" step="0.1" max="2" placeholder="1" value="1">
+				</div>
 				<br>
 				<div>
 					<img id="image-picked" class="image-display">
