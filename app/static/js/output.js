@@ -25,7 +25,7 @@ $('body').on('click', '#submit_btn', function(event) {
     var url = URL.createObjectURL(img_blob);
     // Add the element to the DOM
     link.setAttribute("type", "hidden");
-    link.download = 'enhanced_image.png'; // set to download
+    link.download = 'styled_image.png'; // set to download
     link.href = url;
     document.body.appendChild(link); // append element
     link.click(); // activate
