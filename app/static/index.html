@@ -68,21 +68,25 @@ body {
 }
 
 #content1 {
-  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 #left1 {
   float: left;
-  width: 25%;
-  height: 100%;
+  top: 0;
+  width: 100%;
+  height: 40%;
   overflow: auto;
   box-sizing: border-box;
   padding: 0.2em;
 }
 #right1 {
   float: left;
-  width: 75%;
-  background: linear-gradient(to bottom, #000066 -19%, #ccffff 93%);
-  height: 100vh;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, #000066 -10%, #ccffff 93%);
+  height: 60%;
   overflow: auto;
   box-sizing: border-box;
   padding: 0.5em;
@@ -141,8 +145,7 @@ body {
 			<form class="contact100-form validate-form" action="/upload" method="post" enctype="multipart/form-data">
 				<div class="wrap-input100 validate-input" data-validate = "Valid image file is required: jpg or png">
 					<p class="label-input100">Select Only One Image File</p>
-					<p class="label-input10">Note: output image limited to 1500x1500 pixels due to memory and compute constraints</p>
-					<p class="label-input10">Image sizes around 400x400 - 600x600 work best for visual effect</p>
+					<p class="label-input10">Note: Keep finess near 1 due to memory and compute constraints.</p>
 					<input id="inp_file" type="file" name="file" >
 					<input id="inp_img" type="hidden" name="img" value="">
 					<span class="focus-input100"></span>
@@ -232,11 +235,9 @@ body {
   </div>
   <div id="right1">
 <div class="header">
-	<br>
-	<b><h2>|| These are your Style Options ||</h2></b>
-	<br>
+	<b><h1>*****|| These are your Style Options ||*****</h1></b>
 	<h3>You will know the style name by moving your cursor above the style photo you want to try</h3>
-	<p><b>.....</b></p>
+	<p><b>. . . . .</b></p>
 </div>
 
 <div class="row">
