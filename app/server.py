@@ -61,8 +61,8 @@ async def upload(request):
     data_.c = 3
 
     learn.data = data_
-    load_path = "app/saved/"+Style
-    learn.load(load_path)
+    learn.model_dir = 'app/saved'
+    learn.load(Style)
     
     _,img_hr,losses = learn.predict(img)
 
