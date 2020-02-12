@@ -67,7 +67,7 @@ a:hover {
 
 /*---------------------------------------------*/
 h1,h2,h3,h4,h5,h6 {
-	margin: 0px;
+	margin: 6px;
 }
 
 p {
@@ -700,8 +700,7 @@ body {
 #left1 {
   float: left;
   width: 30%;
-  height: 98%;
-  overflow: auto;
+  height: 100%;
   box-sizing: border-box;
   padding: 0.2em;
 }
@@ -709,7 +708,7 @@ body {
   float: left;
   width: 70%;
   background: linear-gradient(to bottom, #000066 -10%, #ccffff 93%);
-  height: 100vh;
+  height: 100%;
   overflow: auto;
   box-sizing: border-box;
   padding: 0.5em;
