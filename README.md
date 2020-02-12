@@ -4,7 +4,6 @@ Demo web app for image style transfer using Pytorch and [fastai](https://github.
 Available at <a href="https://neural-style-app.onrender.com/" target="_blank">render</a>
 
 The model is a custom network trained on a subset of the Coco 2017 dataset. The code needed to recreate the training data 
-and train the model is detailed in the Jupyter notebook in the notebooks directory.
+and train the model is detailed in the https://github.com/amancrackpot/jupyter_nbs in the DL-Fast-style-transfer.ipynb notebook.
 
-Code for the web app is based on work by https://github.com/kheyer 
-and [fastai](https://github.com/fastai/course-v3/tree/master/docs/production)
+Code for the web app is based on work by https://github.com/kheyer and [fastai](https://github.com/fastai/course-v3/tree/master/docs/production)
