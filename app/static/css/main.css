@@ -155,7 +155,7 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 10px;
   background: #0c2bdb;
   background: -webkit-linear-gradient(45deg, #0c2bdb, #2d2964);
   background: -o-linear-gradient(45deg, #0c2bdb, #2d2964);
@@ -166,9 +166,9 @@ iframe {
 .wrap-contact100 {
   width: 500px;
   background: #fff;
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
-  padding: 42px 55px 45px 55px;
+  padding: 35px 42px 38px 42px;
 }
 
 
@@ -182,7 +182,7 @@ iframe {
   color: #333333;
   line-height: 1.2;
   text-align: left;
-  padding-bottom: 44px;
+  padding-bottom: 35px;
 }
 
 
@@ -200,7 +200,7 @@ iframe {
   color: #333333;
   line-height: 1.2;
   text-align: center;
-  padding-bottom: 44px;
+  padding-bottom: 38px;
   padding-top: 10px;
 }
 
@@ -211,7 +211,7 @@ iframe {
   color: #333333;
   line-height: 1.2;
   text-align: left;
-  padding-bottom: 44px;
+  padding-bottom: 38px;
 }
 
 /*------------------------------------------------------------------
