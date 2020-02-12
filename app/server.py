@@ -31,9 +31,10 @@ async def download_file(url, dest):
 
 
 async def setup_learner():
-    await download_file(export_file_url, path/'models'/export_file_name)
+#     await download_file(export_file_url, path/'models'/export_file_name)
     defaults.device = torch.device('cpu')
     learn = load_learner(path/'models', export_file_name)
+    learn.model_dir = path/'saved'
     return learn
 
 loop = asyncio.get_event_loop()
@@ -61,7 +62,7 @@ async def upload(request):
     data_.c = 3
 
     learn.data = data_
-    learn.load(path/'saved'/Style);
+    learn.load(Style)
     
     _,img_hr,losses = learn.predict(img)
 
