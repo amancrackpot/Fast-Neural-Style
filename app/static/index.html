@@ -18,14 +18,13 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 3px;
 }
 
 .header {
   text-align: Center;
-  padding: 4px;
+  padding: 6px;
   background: white;
-  font-weight: bold;
 }
 
 .row {
@@ -91,24 +90,43 @@ body {
 
 .container {
   position: relative;
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
 }
 
-.container img {
-  vertical-align: middle;
-  background: white;
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
   padding: 5px;
+  background: white;
 }
 
-.container .content {
+.overlay {
   position: absolute;
-  bottom: 5px;
-  left: 5px; 
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  padding: 3px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.67);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .4s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
 </style>
 </head>
@@ -215,422 +233,372 @@ body {
   <div id="right1">
   <div class="header">
 
-<h1>|| These are your Style Options ||</h1>
-<p>Pick any 'Style' from below and then provide it through the drop down menu on left panel...</p>
+<b><h1>|| These are your Style Options ||</h1></b>
+<h2>Pick any 'Style' from below and then provide it through the drop down menu on left panel...</h2>
+<h4>*You will know the style name by moving your cursor above the style photo you want to try*</h4>
 </div>
 
 <div class="row">
   <div class="column">
-    <div class="content">
-    	<div class="container">
-      	<img src="static/images/style/waterfall.jpg" alt="waterfall" style="width:100%">
-        	<div class="content">
-    			Waterfall
-  			</div>
-		</div>
-    </div>
-
- 
-    <div class="content">
-    	<div class="container">
+    <div class="container">
+      <img src="static/images/style/waterfall.jpg" alt="waterfall" style="width:100%" class="image">
+  		<div class="overlay">
+    	<div class="text">Waterfall</div>
+  		</div>
+	</div>
+    <div class="container">
       	<img src="static/images/style/watercolor.jpg" alt="watercolor" style="width:100%">
-        	<div class="content">
-    			Watercolor
-  			</div>
+  		<div class="overlay">
+    	<div class="text">Watercolor</div>
 		</div>
     </div>
- 
-
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/vibrant.jpg" alt="vibrant" style="width:100%">
-        	<div class="content">
-    			Vibrant
-  			</div>
+  		<div class="overlay">
+    	<div class="text">Vibrant</div>
 		</div>
     </div>
-
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/venetia.jpg" alt="venetia" style="width:100%">
-        	<div class="content">
-    			Venetia
-  			</div>
+  		<div class="overlay">
+    	<div class="text">Venetia</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/van_gogh.jpg" alt="van gogh" style="width:100%">
-        	<div class="content">
-    			Van Gogh
+  		<div class="overlay">
+    	<div class="text">Van Gogh
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/udnie.jpg" alt="udnie" style="width:100%">
-        	<div class="content">
-    			Udnie
+  		<div class="overlay">
+    	<div class="text">Udnie
   			</div>
 		</div>
     </div>
 
-    <div class="content">
+
     	<div class="container">
       	<img src="static/images/style/thunder.jpg" alt="thunder" style="width:100%">
-        	<div class="content">
-    			Thunder
+  		<div class="overlay">
+    	<div class="text">Thunder
   			</div>
 		</div>
     </div>
 
-    <div class="content">
+
     	<div class="container">
       	<img src="static/images/style/style.jpg" alt="rain2" style="width:100%">
-        	<div class="content">
-    			Rain 2
+  		<div class="overlay">
+    	<div class="text">Rain 2
   			</div>
 		</div>
     </div>
 
-    <div class="content">
+
     	<div class="container">
       	<img src="static/images/style/starry.jpg" alt="starry" style="width:100%">
-        	<div class="content">
-    			Starry
+  		<div class="overlay">
+    	<div class="text">Starry
   			</div>
 		</div>
     </div>
 
-    <div class="content">
+
     	<div class="container">
       	<img src="static/images/style/sketch.jpg" alt="sketch" style="width:100%">
-        	<div class="content">
-    			Sketch
+  		<div class="overlay">
+    	<div class="text">Sketch
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/scream.jpg" alt="scream" style="width:100%">
-        	<div class="content">
-    			Scream
+  		<div class="overlay">
+    	<div class="text">Scream
   			</div>
 		</div>
     </div>
   </div>
     <div class="column">
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/rain.jpg" alt="rain" style="width:100%">
-        	<div class="content">
-    			Rain
+  		<div class="overlay">
+    	<div class="text">Rain
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/poly.jpg" alt="poly" style="width:100%">
-        	<div class="content">
-    			Poly
+  		<div class="overlay">
+    	<div class="text">Poly
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/picassobw.jpg" alt="picassobw" style="width:100%">
-        	<div class="content">
-    			Picasso BW
+  		<div class="overlay">
+    	<div class="text">Picasso BW
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/picasso.jpg" alt="picasso" style="width:100%">
-        	<div class="content">
-    			Picasso
+  		<div class="overlay">
+    	<div class="text">Picasso
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/patterns.jpg" alt="patterns" style="width:100%">
-        	<div class="content">
-    			Patterns
+  		<div class="overlay">
+    	<div class="text">Patterns
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/paper.jpg" alt="paper" style="width:100%">
-        	<div class="content">
-    			Paper
+  		<div class="overlay">
+    	<div class="text">Paper
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/neon.jpg" alt="neon" style="width:100%">
-        	<div class="content">
-    			Neon
+  		<div class="overlay">
+    	<div class="text">Neon
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/mosaic.jpg" alt="mosaic" style="width:100%">
-        	<div class="content">
-    			Mosaic
+  		<div class="overlay">
+    	<div class="text">Mosaic
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/magma.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Magma
+  		<div class="overlay">
+    	<div class="text">Magma
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/loose.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Loose
+  		<div class="overlay">
+    	<div class="text">Loose
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/little_village.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Little Village
+  		<div class="overlay">
+    	<div class="text">Little Village
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/lion.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Lion
+  		<div class="overlay">
+    	<div class="text">Lion
   			</div>
 		</div>
     </div>
   </div>
     <div class="column">
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/krishna.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Krishna
+  		<div class="overlay">
+    	<div class="text">Krishna
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/inked-.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Inked
+  		<div class="overlay">
+    	<div class="text">Inked
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/ice.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Ice
+  		<div class="overlay">
+    	<div class="text">Ice
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/graffiti.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Graffiti
+  		<div class="overlay">
+    	<div class="text">Graffiti
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/girl.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Girl
+  		<div class="overlay">
+    	<div class="text">Girl
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/fireice.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Fire_Ice
+  		<div class="overlay">
+    	<div class="text">Fire_Ice
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/fire.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Fire
+  		<div class="overlay">
+    	<div class="text">Fire
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/depp.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Depp
+  		<div class="overlay">
+    	<div class="text">Depp
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/deep.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Deep
+  		<div class="overlay">
+    	<div class="text">Deep
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/cuphead.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Cuphead
+  		<div class="overlay">
+    	<div class="text">Cuphead
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/crayon.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Crayon
+  		<div class="overlay">
+    	<div class="text">Crayon
   			</div>
 		</div>
     </div>
   </div>
       <div class="column">
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/comic.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Comic
+  		<div class="overlay">
+    	<div class="text">Comic
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/colors.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Colors
+  		<div class="overlay">
+    	<div class="text">Colors
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/clocktower.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Clocktower
+  		<div class="overlay">
+    	<div class="text">Clocktower
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/cartoon.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Cartoon
+  		<div class="overlay">
+    	<div class="text">Cartoon
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/candy.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Candy
+  		<div class="overlay">
+    	<div class="text">Candy
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/butterfly.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Butterfly
+  		<div class="overlay">
+    	<div class="text">Butterfly
   			</div>
 		</div>
     </div>
- 
-    <div class="content">
+
     	<div class="container">
       	<img src="static/images/style/buddha.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Buddha
+  		<div class="overlay">
+    	<div class="text">Buddha
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/bold.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Bold
+  		<div class="overlay">
+    	<div class="text">Bold
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/bird.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Bird
+  		<div class="overlay">
+    	<div class="text">Bird
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/bad.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Bad
+   		<div class="overlay">
+    	<div class="text">Bad
   			</div>
 		</div>
     </div>
 
-    <div class="content">
     	<div class="container">
       	<img src="static/images/style/anime.jpg" alt="Mountains" style="width:100%">
-        	<div class="content">
-    			Anime
-  			</div>
+  		<div class="overlay">
+    	<div class="text">Anime</div>
 		</div>
-    </div>
-  </div>
+    	</div>
+  	</div>
 </div>
 
 
@@ -640,3 +608,4 @@ body {
 </div>
 </body>
 </html>
+
