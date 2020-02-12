@@ -16,7 +16,7 @@ function fileChange(e) {
 
             var image = new Image();
             image.onload = function(imageEvent) {	
-                var max_size = 1200;
+                var max_size = 2000;
                 var w = image.width;
                 var h = image.height;
                 if (x > max_size || h > max_size) {
