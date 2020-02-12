@@ -1,0 +1,69 @@
+[{"stream_name":"stderr","time":1.9691289680000001,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":4.619683789,"data":"[NbConvertApp] Executing notebook with kernel: python3\n"}
+,{"stream_name":"stderr","time":4232.468196699,"data":"[NbConvertApp] WARNING | Timeout waiting for IOPub output\n"}
+,{"stream_name":"stderr","time":12346.863382326,"data":"[NbConvertApp] WARNING | Timeout waiting for IOPub output\n"}
+,{"stream_name":"stderr","time":20460.011784198,"data":"[NbConvertApp] WARNING | Timeout waiting for IOPub output\n"}
+,{"stream_name":"stderr","time":28578.929376467,"data":"[NbConvertApp] WARNING | Timeout waiting for IOPub output\n"}
+,{"stream_name":"stderr","time":28586.895353118,"data":"[NbConvertApp] Writing 53572639 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":28587.800143495,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":28589.988805136,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":28589.988973895,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28589.98965688,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28589.990232647,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28589.990450384,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28589.991735214,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28589.99273782,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28589.993409351,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28589.994005821,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28589.995282088,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28589.996144571,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28589.996884233,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28589.997318418,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28589.998520928,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28589.999457865,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.000080147,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.000705057,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.001871715,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.002702143,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.003412338,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.003846423,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.005135688,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.00613398,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.006802903,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.007431521,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.008660759,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.009529708,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.010255112,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.010623897,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.011949966,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.012940335,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.013634359,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.014239317,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.015530785,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.016374106,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.017142686,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.017577929,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.018833106,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.019790103,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.020527039,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.021118504,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.022437404,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.023304975,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.024005334,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.024438372,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.02582733,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.026885554,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.027570645,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.028175805,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.02947391,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.030368444,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.031085244,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.031538904,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.032783986,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.033737769,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.03441194,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.035007117,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.036241556,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.037136894,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":28590.037812719,"data":"[NbConvertApp] Writing 383647 bytes to __results__.html\n"}
+]
