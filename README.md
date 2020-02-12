@@ -1,4 +1,4 @@
-# Enhance-app
+# Neural Style App
 Demo web app for image style transfer using Pytorch and [fastai](https://github.com/fastai)
 
 Available at <a href="http://www.deepenhance.im/" target="_blank">render</a>
