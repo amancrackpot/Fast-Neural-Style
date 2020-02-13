@@ -143,7 +143,7 @@ iframe {
 
 .container-contact100 {
   width: 100%;  
-  min-height: 60%;
+  max-height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -692,12 +692,12 @@ body {
   height: 50%;
   overflow: auto;
   box-sizing: border-box;
-  padding: 0.2em;
+  padding: 0.1em;
 }
 #right1 {
   bottom: 0;
   height: 50%;
-  background: linear-gradient(to bottom left, #0099cc 0%, #cc3399 135%);
+  background: linear-gradient(to bottom left, #0099cc -40%, #cc3399 125%);
   height: 100%;
   overflow: auto;
   box-sizing: border-box;
@@ -713,8 +713,7 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  padding: 3px;
-  background: white;
+  padding: 0px;
 }
 
 .overlay {
@@ -722,7 +721,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 10, 50, 0.75);
+  background: rgba(0, 20, 80, 0.7);
   overflow: hidden;
   width: 0;
   height: 100%;
