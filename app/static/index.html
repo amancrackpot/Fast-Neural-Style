@@ -21,7 +21,7 @@
 		<div class="wrap-contact100">
 			<a href="/"><img height="34" width="34" src="static/images/25694.png"></a>
 			<span class="contact100-form-title">Image Styler</span>
-			<form class="contact100-form validate-form" action="/upload" method="post" enctype="multipart/form-data">
+			<form class="contact100-form validate-form" action="/upload" method="post" enctype="multipart/form-data" onsubmit="ShowLoading()">
 				<div class="wrap-input100 validate-input" data-validate = "Valid image file is required: jpg or png">
 					<p class="label-input100">Select Only One Image File</p>
 					<p class="label-input10">Note: Keep finess close to default and resolution upto 1000X1000 due to memory constraints.</p>
@@ -493,6 +493,21 @@
 </div>
 </div>
 </div>
+<script type="text/javascript">
+    function ShowLoading(e) {
+        var div = document.createElement('div');
+        var img = document.createElement('img');
+        img.src = 'https://cdn.dribbble.com/users/563824/screenshots/4155980/untitled-11.gif';
+        div.innerHTML = "Now sit back and relax for few moments...<br />";
+        div.style.cssText = 'position: fixed; top: 5%; left: 40%; z-index: 5000; width: 422px; text-align: center; background: #EDDBB0; border: 1px solid #000';
+        div.appendChild(img);
+        document.body.appendChild(div);
+        return true;
+        // These 2 lines cancel form submission, so only use if needed.
+        //window.event.cancelBubble = true;
+        //e.stopPropagation();
+    }
+</script>
 </body>
 
 </html>
