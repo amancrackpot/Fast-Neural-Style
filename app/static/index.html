@@ -498,8 +498,7 @@
         var div = document.createElement('div');
         var img = document.createElement('img');
         img.src = 'https://cdn.dribbble.com/users/563824/screenshots/4155980/untitled-11.gif';
-        div.innerHTML = "Now sit back and relax for few moments...<br />";
-        div.style.cssText = 'position: fixed; top: 5%; left: 40%; z-index: 5000; width: 422px; text-align: center; background: #EDDBB0; border: 1px solid #000';
+        div.style.cssText = 'position: relative; height: 100%; z-index: 5000; width: 100%; text-align: center; background: rgba(0,0,0,0.8);
         div.appendChild(img);
         document.body.appendChild(div);
         return true;
