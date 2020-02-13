@@ -1,6 +1,3 @@
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
-
 @font-face {
   font-family: Poppins-Regular;
   src: url('../fonts/poppins/Poppins-Regular.ttf'); 
@@ -67,7 +64,7 @@ a:hover {
 
 /*---------------------------------------------*/
 h1,h2,h3,h4,h5,h6 {
-	margin: 0px;
+	margin: 6px;
 }
 
 p {
@@ -155,20 +152,16 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 8px;
-  background: #0c2bdb;
-  background: -webkit-linear-gradient(45deg, #0c2bdb, #2d2964);
-  background: -o-linear-gradient(45deg, #0c2bdb, #2d2964);
-  background: -moz-linear-gradient(45deg, #0c2bdb, #2d2964);
-  background: linear-gradient(45deg, #0c2bdb, #2d2964);
+  padding: 12px;
+  background: linear-gradient(to bottom left, #0099cc -22%, #993366 100%);
 }
 
 .wrap-contact100 {
   width: 500px;
   background: #fff;
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
-  padding: 35px 42px 38px 42px;
+  padding: 35px 35px 35px 35px;
 }
 
 
@@ -330,12 +323,7 @@ textarea.input100 {
   width: 300%;
   height: 100%;
 
-  background: #0c2bdb;
-  background: -webkit-linear-gradient(45deg, #0c2bdb, #2d2964);
-  background: -o-linear-gradient(45deg, #0c2bdb, #2d2964);
-  background: -moz-linear-gradient(45deg, #0c2bdb, #2d2964);
-  background: linear-gradient(45deg, #0c2bdb, #2d2964);
-
+  background: linear-gradient(to left, #0099cc 0%, #993366 100%);
   top: 0;
   left: -100%;
 
@@ -645,14 +633,13 @@ textarea.input100 {
 
 body {
   margin: 0;
-  padding: 3px;
+  padding: 0;
 }
 
 .header {
   text-align: Center;
   padding: 6px;
-  background: white;
-  color: #484848;
+  color: white;
 }
 
 .row {
@@ -710,7 +697,7 @@ body {
 #right1 {
   bottom: 0;
   height: 50%;
-  background: linear-gradient(to bottom, #000066 -10%, #ccffff 93%);
+  background: linear-gradient(to bottom left, #0099cc 0%, #cc3399 135%);
   height: 100%;
   overflow: auto;
   box-sizing: border-box;
@@ -726,7 +713,7 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  padding: 5px;
+  padding: 3px;
   background: white;
 }
 
@@ -735,7 +722,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.67);
+  background: rgba(235, 245, 255, 0.65);
   overflow: hidden;
   width: 0;
   height: 100%;
@@ -747,8 +734,8 @@ body {
 }
 
 .text {
-  color: white;
-  font-size: 35px;
+  color: gray;
+  font-size: 120%;
   position: absolute;
   top: 50%;
   left: 50%;
