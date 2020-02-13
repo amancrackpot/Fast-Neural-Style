@@ -208,7 +208,7 @@ iframe {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .wrap-contact100 {
@@ -778,7 +778,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 20, 80, 0.7);
+  background: rgba(0, 0, 0, 0.55);
   overflow: hidden;
   width: 0;
   height: 100%;
