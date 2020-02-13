@@ -25,7 +25,8 @@
 					<p class="label-input100">Select Only One Image File</p>
 					<p class="label-input10">Note: Keep finess near 1 and resolution limit 1000X1000 due to memory and compute constraints.</p>
                     <br>
-					<input id="inp_file" type="file" name="file" required >
+					<input id="inp_file" type="file" name="file" >
+					<input id="inp_img" type="hidden" name="img" value="">
 					<span class="focus-input100"></span>
 				</div>
 				<div>
@@ -92,7 +93,7 @@
 				<div class="container-contact100-form-btn">
 					<div class="wrap-contact100-form-btn">
 						<div class="contact100-form-bgbtn"></div>
-						<button type = "button" id = "submit_btn" class="contact100-form-btn" type="submit">
+						<button type = "button" id = "submit_btn" class="contact100-form-btn">
 							<span class="topline-form-btn">
 								Upload & Analyze Image
 								<span class="subline-form-btn">
@@ -109,14 +110,16 @@
 			</div>
 		</div>
 	</div>
-
+	<script src="static/js/utility.js"></script>
   </div>
-  <div id="right1">
-<div class="header">
+	
+<div id="right1">
+	
+	<div class="header">
 	<b><h1> Your Style Options </h1></b>
 	<h3>You will know the style name by putting your cursor / touch above the style photo you want to try</h3>
 	<h5>- - - - - -</h5>
-</div>
+	</div>
 
 <div class="row">
   <div class="column">
