@@ -171,7 +171,9 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 18px;
+  padding-top: 60px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .wrap-contact100 {
