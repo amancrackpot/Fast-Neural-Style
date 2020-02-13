@@ -188,9 +188,10 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 70px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
 }
 
 .wrap-contact100 {
@@ -226,7 +227,7 @@ iframe {
 
 .contact100-form-title {
   display: block;
-  font-family: Poppins-Bold;
+  font-family: Poppins-Medium;
   font-size: 35px;
   color: #333333;
   line-height: 1.2;
@@ -238,7 +239,7 @@ iframe {
 .contact100-form-result-title {
   display: block;
   font-family: Poppins-Bold;
-  font-size: 39px;
+  font-size: 35px;
   color: #333333;
   line-height: 1.2;
   text-align: left;
