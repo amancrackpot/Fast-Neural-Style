@@ -33,6 +33,25 @@ body, html {
 	font-family: Poppins-Regular, sans-serif;
 }
 
+input[type=range]::-webkit-slider-thumb {
+-webkit-appearance: none;
+  border: 2px solid #787878;
+  border-radius: 80%;
+  height: 12px;
+  width: 12px;
+  max-width: 15px;
+  position: relative;
+background: white;
+  cursor: -webkit-grab;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  height: 2.5px;
+  width: 50%;
+   background: linear-gradient(to right, #003366 38%, #ff0000 133%);
+}
+
 .wrapper {
     min-width: 100%;
     min-height: 100%;
