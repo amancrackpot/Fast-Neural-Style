@@ -42,8 +42,6 @@ body {
   margin:0;
 }
 .wrapper {
-    width: 100%;
-    height: 100%;
     position: absolute;
     background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
     background-size: 600% 100%;
@@ -59,7 +57,30 @@ body {
   display: none;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
 
+/* Track */
+::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width: 6px;
+}
+
+::-webkit-scrollbar-track{
+    margin: 1px 0;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 12px;
+    border: 1.5px solid rgba(255,255,255,0);
+    background-clip: content-box;
+    background-color: #a0a0a0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  	background: #555;
+}
 /*---------------------------------------------*/
 a {
 	font-family: Poppins-Regular;
