@@ -155,12 +155,12 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 12px;
+  padding: 15px;
   background: linear-gradient(to bottom left, #0099cc -22%, #993366 100%);
 }
 
 .wrap-contact100 {
-  width: 500px;
+  width: 450px;
   background: #fff;
   border-radius: 20px;
   overflow: hidden;
@@ -714,8 +714,6 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  padding: 3px;
-  background: white;
 }
 
 .overlay {
@@ -723,7 +721,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(235, 245, 255, 0.65);
+  background: rgba(0, 10, 50, 0.75);
   overflow: hidden;
   width: 0;
   height: 100%;
@@ -735,7 +733,7 @@ body {
 }
 
 .text {
-  color: gray;
+  color: white;
   font-size: 120%;
   position: absolute;
   top: 50%;
