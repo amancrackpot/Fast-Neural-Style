@@ -713,7 +713,8 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  padding: 0px;
+  padding: 1.5px;
+  background: white;
 }
 
 .overlay {
