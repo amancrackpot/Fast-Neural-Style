@@ -714,7 +714,8 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  padding: 0;
+  padding: 1px;
+  background: black;
 }
 
 .overlay {
