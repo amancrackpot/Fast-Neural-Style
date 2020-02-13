@@ -207,10 +207,10 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 50px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 
 .wrap-contact100 {
