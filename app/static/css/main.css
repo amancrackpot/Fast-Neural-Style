@@ -75,7 +75,7 @@ input[type=range] {
 /* Track */
 ::-webkit-scrollbar{
     -webkit-appearance: none;
-    width: 8px;
+    width: 6px;
 }
 
 ::-webkit-scrollbar-track{
@@ -84,13 +84,13 @@ input[type=range] {
 
 ::-webkit-scrollbar-thumb{
     border-radius: 12px;
-    border: 1.5px solid rgba(255,255,255,0);
+    border: 1px solid rgba(255,255,255,0);
     background-clip: content-box;
     background-color: rgba(255,255,255,0.7);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  	background: #555;
+  	background: white;
 }
 /*---------------------------------------------*/
 a {
@@ -203,7 +203,8 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  padding: 15px;
+  padding-top: 70px;
 }
 
 .wrap-contact100 {
@@ -737,7 +738,7 @@ textarea.input100 {
 #left1 {
   float: left;
   width: 25%;
-  height: 99%;
+  height: 100%;
   overflow: auto;
   box-sizing: border-box;
   padding: 0.5em;
