@@ -96,14 +96,3 @@ function dataURLtoBlob(dataURL) {
   }
 
 
-function ShowLoading(e) {
-        var div = document.createElement('div');
-        var img = document.createElement('img');
-        div.style = 'position: fixed; z-index: 100; width: 100%; height: 100%; text-align: center; border: 0; color: white; font-size: 180%; background-image: url("static/images/untitled-11.gif"); background-position: center; background-repeat: no-repeat; background-size: cover; opacity: 0.97';
-        div.appendChild(img);
-        document.body.appendChild(div);
-        return true;
-        // These 2 lines cancel form submission, so only use if needed.
-        //window.event.cancelBubble = true;
-        //e.stopPropagation();
-}
