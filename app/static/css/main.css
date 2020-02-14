@@ -785,6 +785,7 @@ textarea.input100 {
   color: white;
   font-size: 130%;
   position: absolute;
+  font-family: Poppins-Regular;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
