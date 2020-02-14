@@ -18,7 +18,6 @@
   src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
 }
 
-
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
@@ -49,7 +48,7 @@ input[type=range] {
   -webkit-appearance: none;
   height: 2.5px;
   width: 50%;
-   background: linear-gradient(to right, #003366 38%, #ff0000 133%);
+  background: linear-gradient(to right, #003366 51%, #ff0000 124%);
 }
 
 .wrapper {
