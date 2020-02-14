@@ -1,4 +1,4 @@
-@media "screen, handheld" {
+@media only screen and (min-width : 500px){
 	
 	@font-face {
 	  font-family: Poppins-Regular;
@@ -804,7 +804,7 @@
 	}
 }
 
-@media screen and (min-width: 40.5em) {
+@media only screen and (min-width : 768px) {
 
 	@font-face {
 	  font-family: Poppins-Regular;
