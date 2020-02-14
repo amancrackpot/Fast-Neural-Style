@@ -860,6 +860,7 @@ body {
 	    background-size: 600% 100%;
 	    animation: gradient 14s linear infinite;
 	    animation-direction: alternate;
+	    overflow: scroll;
 	}
 	@keyframes gradient {
 	    0% {background-position: 0%}
