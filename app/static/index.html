@@ -7,7 +7,6 @@
 	
 	<link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="static/css/main.css">
-
 </head>
 <body>
 <script>
@@ -16,15 +15,55 @@
           var x = document.getElementById("myDIV");
           x.style.display = "block";
           return true;
-          // These 2 lines cancel form submission, so only use if needed.
-          //window.event.cancelBubble = true;
-          //e.stopPropagation();
   }
+  
+  
 </script>
 
-<div id="myDIV" style = "position: fixed; z-index: 100; width: 100%; height: 100%; text-align: center; color: rgba(255,255,255,0.9); font-size: 200%; background-image: url( 'https://cdn.dribbble.com/users/563824/screenshots/4155980/untitled-11.gif'); background-position: center; background-repeat: no-repeat; background-size: cover; opacity: 0.96 ; display:none;"><h4 style="margin-top: 80px; font-family: Poppins-Medium;">Applying . . .</h4>
+
+
+<div id="myDIV" style = "position: fixed; z-index: 100; width: 100%; height: 100%; text-align: center; color: rgba(255,255,255,0.9); background-image: url( 'https://cdn.dribbble.com/users/563824/screenshots/4155980/untitled-11.gif'); background-position: center; background-repeat: no-repeat; background-size: cover; opacity: 0.96 ; display:none;">
+
+<h4 style="margin-top: 60px; font-size: 200%; font-family: Poppins-Medium;">Working on it . . .</h4>
+
+<p style="font-family: Poppins-Regular;">(May have to wait for a few moments)</p>
+
+<div id="random"  style="Tahoma, sans-serif; font-style: italic; position:absolute; bottom: 8%; text-align: center; width:100%;"></div>
+
+<SCRIPT LANGUAGE="JavaScript">
+function getMessage() {
+// create array of murphy laws
+var ar = new Array(20)
+ar[0] = "“Everything you can imagine is real.”"
+ar[1] = "“Reality is wrong, dreams are for real.”"
+ar[2] = "“What consumes your mind controls your life.”"
+ar[3] = "“Art enables us to find ourselves and lose ourselves at the same time.”"
+ar[4] = "“Real gold doesn`t necessarily glitter, false diamonds always shine.”"
+ar[5] = "“You have to be like water: slip through fingers and hold up ships.”"
+ar[6] = "“The more you learn, the less you know.”"
+ar[7] = "“Is man merely a mistake of God's? Or God merely a mistake of man?”"
+ar[8] = "“If you try to fail, and succeed, which have you done?”"
+ar[9] = "“We live in an age when unnecessary things are our only necessities.”"
+ar[10] = "“Don't believe anything you read on the net. Except this. Well, including this, I suppose.”"
+ar[11] = "“Good judgment comes from experience, and experience comes from bad judgment.”"
+ar[12] = "“Seek freedom and become captive of your desires. Seek discipline and find your liberty.”"
+ar[13] = "“Whatever you do will be insignificant, but it is very important that you do it.”"
+ar[14] = "“The curious paradox is that when I accept myself just as I am, then I can change.”"
+ar[15] = "“Life is a preparation for the future; and the best preparation for the future is to live as if there were none.”"
+ar[16] = "“A lot of people never use their initiative because no-one told them to.”"
+ar[17] = "“And the trouble is, if you don't risk anything, you risk even more.”"
+ar[18] = "“Men have two greatest fears: the first fear is the fear of being needed, and the second fear is the fear of not being needed.”"
+ar[19] = "“Failing to plan, is like planning to fail.”"
+
+var now = new Date()
+var sec = now.getSeconds()
+document.getElementById("random").innerHTML = "Quote of the Moment : " + ar[sec % 20]
+}
+getMessage()
+//-->
+</SCRIPT>
 </div>	
-<div class="wrapper">
+
 <div id="content1">
   <div id="left1">
   <div class="container-contact100">
@@ -106,7 +145,7 @@
 				<div class="container-contact100-form-btn">
 					<div class="wrap-contact100-form-btn">
 						<div class="contact100-form-bgbtn"></div>
-						<button type = "button" id = "submit_btn" class="contact100-form-btn">
+						<button type = "button" id = "submit_btn" class="contact100-form-btn" onclick=ShowLoading()>
 							<span class="topline-form-btn">
 								Start Rendering
 								<span class="subline-form-btn">
@@ -497,7 +536,6 @@
   	</div>
 </div>
 
-</div>
 </div>
 </div>
 </body>
