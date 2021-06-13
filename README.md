@@ -1,6 +1,7 @@
 # Neural Style Transfer
 
-## Web App Available at <a href="https://neural-style-app.onrender.com/" target="_blank">render</a>
+## Web App Available at https://fast-neural-style-app.onrender.com/
+![demo](https://github.com/amancrackpot/Fast-Neural-Style/blob/master/Results/styler.gif)
 
 #### The code needed to train the model is detailed in the https://github.com/amancrackpot/Fast-Neural-Style/blob/master/faststyletransfer.ipynb notebook.
 Note: Training has been shown only for few styles to keep the size of ipynb file small
