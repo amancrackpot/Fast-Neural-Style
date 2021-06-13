@@ -1,6 +1,6 @@
 # Neural Style Transfer
 
-Web App Available at <a href="https://neural-style-app.onrender.com/" target="_blank">render</a>
+## Web App Available at <a href="https://neural-style-app.onrender.com/" target="_blank">render</a>
 
 The model is a custom network trained on a subset of the Coco 2017 dataset. The code needed to train the model is detailed in the https://github.com/amancrackpot/Fast-Neural-Style/blob/master/faststyletransfer.ipynb notebook.
 Note: Training has been shown only for 2 styles to keep the size of ipynb file small
