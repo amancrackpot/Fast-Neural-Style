@@ -5,7 +5,6 @@ uvicorn
 pip
 python-multipart
 aiofiles
-python>=3.6
 asyncio
 pyyaml
 requests
