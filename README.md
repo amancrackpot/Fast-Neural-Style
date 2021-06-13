@@ -13,7 +13,10 @@ We are trying to transfer style of one image over another without loosing its co
 ## Results of style transfer:
 ![image](https://github.com/amancrackpot/Fast-Neural-Style/blob/master/Results/rain.png)
 
-
+## Style Image: 
+![image](https://github.com/amancrackpot/Fast-Neural-Style/blob/master/Results/mosaic.jpg)
+## Results of style transfer:
+![image](https://github.com/amancrackpot/Fast-Neural-Style/blob/master/Results/mosaic.png)
 
 Code for the web app is based on work by https://github.com/kheyer and [fastai](fast.ai)
 
