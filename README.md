@@ -3,7 +3,7 @@
 ## Web App Available at <a href="https://neural-style-app.onrender.com/" target="_blank">render</a>
 
 #### The code needed to train the model is detailed in the https://github.com/amancrackpot/Fast-Neural-Style/blob/master/faststyletransfer.ipynb notebook.
-Note: Training has been shown only for 2 styles to keep the size of ipynb file small
+Note: Training has been shown only for few styles to keep the size of ipynb file small
 
 # What it is?
 We are trying to transfer style of one image over another without loosing its content. Since a picture is worth than a thousand words, below are some results which will clearly demonstrate this
