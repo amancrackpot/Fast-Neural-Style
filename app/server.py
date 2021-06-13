@@ -49,9 +49,9 @@ async def upload(request):
     
     learn.dls.valid.after_item  = Pipeline([RatioResize(int(256*fi)), ToTensor()])
     learn.model_dir = '.'
-    learner.load(Style, device='cpu', with_opt=False)
+    learn.load(Style, device='cpu', with_opt=False)
     
-    pred_img = learner.predict(img)[0]
+    pred_img = learn.predict(img)[0]
     pred_img = PILImage.create(pred_img).resize(orig_size)
     pred_img_bytes = pred_img.to_bytes_format()
     img_str = base64.b64encode(pred_img_bytes).decode()
