@@ -1,7 +1,6 @@
-import torch
-from fastai.callbacks import *
+from fastai.vision.all import *
 
-class TransformerNet(torch.nn.Module):
+class TransformerNet(Module):
     def __init__(self):
         super(TransformerNet, self).__init__()
         # Initial convolution layers
@@ -41,7 +40,7 @@ class TransformerNet(torch.nn.Module):
         return y
 
 
-class ConvLayer(torch.nn.Module):
+class ConvLayer(Module):
     def __init__(self, in_channels, out_channels, kernel_size, stride):
         super(ConvLayer, self).__init__()
         reflection_padding = kernel_size // 2
@@ -54,7 +53,7 @@ class ConvLayer(torch.nn.Module):
         return out
 
 
-class ResidualBlock(torch.nn.Module):
+class ResidualBlock(Module):
     """ResidualBlock
     introduced in: https://arxiv.org/abs/1512.03385
     recommended architecture: http://torch.ch/blog/2016/02/04/resnets.html
@@ -76,7 +75,7 @@ class ResidualBlock(torch.nn.Module):
         return out
 
 
-class UpsampleConvLayer(torch.nn.Module):
+class UpsampleConvLayer(Module):
     """UpsampleConvLayer
     Upsamples the input and then does a convolution. This method gives better results
     compared to ConvTranspose2d.
@@ -99,44 +98,43 @@ class UpsampleConvLayer(torch.nn.Module):
         return out
 
 
-class FeatureLoss(torch.nn.Module): 
-    def __init__(self, style_img, m_feat, layer_ids, layer_wgts):
-        super().__init__()
-        self.style_img = style_img
-        self.m_feat = m_feat
-        self.loss_features = [self.m_feat[i] for i in layer_ids]
-        self.hooks = hook_outputs(self.loss_features, detach=False)
-        self.wgts = layer_wgts
-        self.metric_names = ['tv(reg)'] + ['content'] + [f'gram_{i}' for i in range(len(layer_ids))]
+class FeatureLoss(Module): 
+    def __init__(self, base_model, style_img, layer_ids, style_wgt):
+        store_attr()      
+        self.extraction_layers = [self.base_model[i] for i in layer_ids]
+        self.hooks = hook_outputs(self.extraction_layers, detach=False)
         
-        
-    def gram_matrix(self,x):
-        n,c,h,w = x.size()
+    def gram(self, x):
+        n, c, h, w = x.shape
         x = x.view(n, c, -1)
-        return (x @ x.transpose(1,2))/(c*h*w)
-
-    def make_features(self, x, clone=False):
-        self.m_feat(x)
+        return (x @ x.transpose(1, 2))/(c*w*h)
+       
+    def get_features(self, x, clone=False):
+        self.base_model(x)
         return [(o.clone() if clone else o) for o in self.hooks.stored]
     
     def forward(self, gen_img, cont_img):
-        cont_feat = self.make_features(cont_img)
-        style_feat = self.make_features(self.style_img, clone=True)
-        gen_feat = self.make_features(gen_img)
         
-        self.feat_losses = [ ( ((gen_img[:,:,1:,:] - gen_img[:,:,:-1,:]).pow(2)).mean() +
-                                ((gen_img[:,:,:,1:] - gen_img[:,:,:,:-1]).pow(2)).mean() ) * 1e-1 ]
+        cont_feats = self.get_features(cont_img)
+        style_feats = self.get_features(self.style_img, clone=True)
+        gen_feats = self.get_features(gen_img)
+
+        gen_img_grams = [self.gram(i) for i in gen_feats[:-1]]
+        style_img_grams = [self.gram(i) for i in style_feats[:-1]]
         
-        self.feat_losses += [ F.mse_loss(gen_feat[1], cont_feat[1]) * 1e5 ]  #content loss (activations)
+        
+#         tv_loss =  ( ((gen_img[:,:,1:,:] - gen_img[:,:,:-1,:]).pow(2)).mean() +
+#                         ((gen_img[:,:,:,1:] - gen_img[:,:,:,:-1]).pow(2)).mean() ) * 1e-6
+        
+        cont_loss =  F.mse_loss(gen_feats[-1], cont_feats[-1])  
 
-        self.feat_losses += [ F.mse_loss(self.gram_matrix(f_in), self.gram_matrix(f_out)) * w
-                             for f_in, f_out, w in zip(gen_feat, style_feat, self.wgts) ] #style loss
+        style_loss = sum([ F.mse_loss(f_in, f_out) 
+                             for f_in, f_out in zip(gen_img_grams, style_img_grams) ] )
+        
 
-        self.metrics = dict(zip(self.metric_names, self.feat_losses))
-
-        return sum(self.feat_losses)
+        return cont_loss + style_loss*self.style_wgt
     
-    def __del__(self): self.hooks.remove()
+#     def __del__(self): self.hooks.remove()
 
 
     
