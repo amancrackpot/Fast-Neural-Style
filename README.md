@@ -3,7 +3,7 @@
 Web App Available at <a href="https://neural-style-app.onrender.com/" target="_blank">render</a>
 
 The model is a custom network trained on a subset of the Coco 2017 dataset. The code needed to recreate the training data 
-and train the model is detailed in the https://github.com/amancrackpot/jupyter_nbs in the DL-Fast-style-transfer.ipynb notebook.
+and train the model is detailed in the https://github.com/amancrackpot/Fast-Neural-Style/faststyletransfer.ipynb notebook.
 
 # What it is?
 We are trying to transfer style of one image over another without loosing its content. Since a picture is worth than a thousand words, below are some results which will clearly demonstrate this
