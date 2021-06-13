@@ -1,9 +1,20 @@
-# Neural Style App
-Demo web app for image style transfer using Pytorch and [fastai](https://github.com/fastai)
+# Neural Style Transfer
 
-Available at <a href="https://neural-style-app.onrender.com/" target="_blank">render</a>
+Web App Available at <a href="https://neural-style-app.onrender.com/" target="_blank">render</a>
 
 The model is a custom network trained on a subset of the Coco 2017 dataset. The code needed to recreate the training data 
 and train the model is detailed in the https://github.com/amancrackpot/jupyter_nbs in the DL-Fast-style-transfer.ipynb notebook.
 
-Code for the web app is based on work by https://github.com/kheyer and [fastai](https://github.com/fastai/course-v3/tree/master/docs/production)
+# What it is?
+We are trying to transfer style of one image over another without loosing its content. Since a picture is worth than a thousand words, below are some results which will clearly demonstrate this
+
+## Style Image: 
+![image](https://github.com/amancrackpot/Fast-Neural-Style/blob/master/Results/starry.jpeg)
+## Results of style transfer:
+![image](https://github.com/amancrackpot/Fast-Neural-Style/blob/master/Results/starry.png)
+
+
+
+Code for the web app is based on work by https://github.com/kheyer and [fastai](fast.ai)
+
+
