@@ -1,10 +1,14 @@
--f https://download.pytorch.org/whl/torch_stable.html
-torch==1.8.1+cpu 
-torchvision==0.9.1+cpu
+torch
+torchvision
 starlette
 uvicorn
+pip
 python-multipart
 aiofiles
+python>=3.6
+asyncio
+pyyaml
+requests
 aiohttp
 jinja2
 numpy
