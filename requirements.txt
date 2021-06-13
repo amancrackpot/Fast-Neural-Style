@@ -1,4 +1,6 @@
-fastai
+-f https://download.pytorch.org/whl/torch_stable.html
+torch==1.8.1+cpu 
+torchvision==0.9.1+cpu
 starlette
 uvicorn
 python-multipart
@@ -8,4 +10,7 @@ jinja2
 https://download.pytorch.org/whl/cpu/torch-1.1.0-cp36-cp36m-linux_x86_64.whl 
 https://download.pytorch.org/whl/cpu/torchvision-0.3.0-cp36-cp36m-linux_x86_64.whl
 numpy
-pillow~=6.0
+pillow
+fastai
+fastcore
+fastprogress
