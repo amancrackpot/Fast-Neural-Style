@@ -6,6 +6,7 @@ from starlette.templating import Jinja2Templates
 import uvicorn, aiohttp, asyncio
 from io import BytesIO, StringIO
 from fastai.vision.all import *
+from utils import *
 import base64
 import pdb
 
