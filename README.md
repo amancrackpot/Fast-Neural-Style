@@ -7,7 +7,7 @@
 Note: Training has been shown only for few styles to keep the size of ipynb file small
 
 # What it is?
-We are trying to transfer style of one image over another without loosing its content. Since a picture is worth than a thousand words, below are some results which will clearly demonstrate this
+We are trying to transfer style of one image over another without loosing its content. With this you can be an artist yourself and convert your boring photos into a piece of art within seconds!  Since a picture is worth than a thousand words, below are some results which will clearly demonstrate this
 
 ## Style Image: 
 ![image](https://github.com/amancrackpot/Fast-Neural-Style/blob/master/Results/rain%2Cjpg.jpg)
