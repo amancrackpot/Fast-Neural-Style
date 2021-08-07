@@ -74,7 +74,7 @@ def show_results(img, fi, style, pred_cont):
 
 
 
-st.title('Neural Style Transfer')
+st.title('Neural Style Transfer : Become an artist in seconds!!')
 st.markdown('<hr>',unsafe_allow_html=True)
 with st.sidebar:
     st.title('Style Settings')
