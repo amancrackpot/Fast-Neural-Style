@@ -7,6 +7,7 @@
 Note: Training has been shown only for few styles to keep the size of ipynb file small
 
 # What it is?
+Neural style transfer is an optimization technique used to take two images—a content image and a style reference image (such as an artwork by a famous painter)—and blend them together so the output image looks like the content image, but “painted” in the style of the style reference image.
 We are trying to transfer style of one image over another without loosing its content. With this you can be an artist yourself and convert your boring photos into a fantastic piece of art within seconds!  Since a picture is worth than a thousand words, below are some results which will clearly demonstrate this
 
 ## Style Image: 
