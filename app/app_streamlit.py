@@ -23,7 +23,7 @@ styles = sorted(['Anime','Depp','Inked','Deep','Paper','Ice','Fire Ice','Fire','
 st.set_page_config(layout='wide')
 st.markdown(f""" <style>
 .reportview-container .main .block-container{{
-padding-top: 0rem;
+padding-top: 2rem;
 padding-bottom: 0rem;
 }}
 
@@ -73,15 +73,14 @@ def show_results(img, fi, style, pred_cont):
 
 
 
-st.image('https://paintingvalley.com/images/facebook-painting-9.jpg',use_column_width=True)
-st.title('Neural Style Transfer : Time To Become An Artist')
-cont = st.beta_container()
+
+st.title('Neural Style Transfer : Time to become an Artist!!')
 st.markdown('<hr>',unsafe_allow_html=True)
 with st.sidebar:
     st.title('Style Settings')
     menu = ['Demo','Upload', 'URL']
     choice = st.selectbox("Select Image Source", menu)
-#     cont = st.beta_container()
+    cont = st.beta_container()
     
     col1, col2 = st.beta_columns(2)
     with col1:
@@ -139,7 +138,7 @@ st.header('Available Style Options')
 st.write('')
 cols = st.beta_columns(4)
 
-cols[2].image(style_imgs[0])
+cols[2].image(style_imgs[0], caption=styles[0])
 for i in range(1,12):
     cols[0].image(style_imgs[i],caption=styles[i])
 for i in range(12,23):
