@@ -73,14 +73,15 @@ def show_results(img, fi, style, pred_cont):
 
 
 
-
-st.title('Neural Style Transfer : Become an artist in seconds!!')
+st.image('https://paintingvalley.com/images/facebook-painting-9.jpg',use_column_width=True)
+st.title('Neural Style Transfer : Time To Become An Artist')
+cont = st.beta_container()
 st.markdown('<hr>',unsafe_allow_html=True)
 with st.sidebar:
     st.title('Style Settings')
     menu = ['Demo','Upload', 'URL']
     choice = st.selectbox("Select Image Source", menu)
-    cont = st.beta_container()
+#     cont = st.beta_container()
     
     col1, col2 = st.beta_columns(2)
     with col1:
