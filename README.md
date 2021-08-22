@@ -1,6 +1,6 @@
 # Neural Style Transfer
 
-### Web App Available at https://share.streamlit.io/amancrackpot/fast-neural-style/app/app_streamlit.py
+#### Web App Available at https://share.streamlit.io/amancrackpot/fast-neural-style/app/app_streamlit.py
 ![demo](https://github.com/tripathiGithub/Fast-Neural-Style/blob/master/Results/style_transfer2.gif)
 
 #### The code needed to train the model is detailed in the https://nbviewer.jupyter.org/github/tripathiGithub/Fast-Neural-Style/blob/master/faststyletransfer.ipynb notebook.
