@@ -49,7 +49,7 @@ style_imgs = get_images(styles)
 
 
 def create_containers(img):
-    col1, col2 = st.beta_columns(2)
+    col1, col2 = st.columns(2)
     
     col1.header('Uploaded Image')
     col1.image(img, use_column_width=True)
