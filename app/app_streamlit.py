@@ -80,15 +80,15 @@ with st.sidebar:
     st.title('Style Settings')
     menu = ['Demo','Upload', 'URL']
     choice = st.selectbox("Select Image Source", menu)
-    cont = st.beta_container()
+    cont = st.container()
     
-    col1, col2 = st.beta_columns(2)
+    col1, col2 = st.columns(2)
     with col1:
         style = st.selectbox("Select your style", styles)
     with col2:
         fi = st.slider('Fineness',min_value=-1.,max_value=+1.,value=0.,step=0.1,format='%g')
         
-    with st.beta_expander(f'Selected Style : {style}',True):
+    with st.expander(f'Selected Style : {style}',True):
         st.image(style_imgs[styles.index(style)])
     btn = st.button('Render')
 
@@ -136,7 +136,7 @@ else:
 
 st.header('Available Style Options')
 st.write('')
-cols = st.beta_columns(4)
+cols = st.columns(4)
 
 cols[2].image(style_imgs[0], caption=styles[0])
 for i in range(1,12):
